@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.10.14
--- http://www.phpmyadmin.net
+-- version 4.6.5.2
+-- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: May 22, 2017 at 11:17 PM
--- Server version: 10.0.27-MariaDB-cll-lve
--- PHP Version: 5.6.20
+-- Host: 127.0.0.1
+-- Generation Time: May 30, 2017 at 02:16 PM
+-- Server version: 10.1.21-MariaDB
+-- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,10 +14,10 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dioceseo_certs`
+-- Database: `cleaning`
 --
 
 -- --------------------------------------------------------
@@ -26,81 +26,11 @@ SET time_zone = "+00:00";
 -- Table structure for table `accesses`
 --
 
-CREATE TABLE IF NOT EXISTS `accesses` (
+CREATE TABLE `accesses` (
   `accessDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `userCode` int(11) NOT NULL,
   `parishcode` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `accesses`
---
-
-INSERT INTO `accesses` (`accessDate`, `userCode`, `parishcode`) VALUES
-('2017-05-03 10:54:45', 1, 1001),
-('2017-05-03 10:55:14', 0, 9999),
-('2017-05-03 19:05:53', 0, 9999),
-('2017-05-04 01:52:58', 0, 9999),
-('2017-05-04 01:58:08', 0, 9999),
-('2017-05-04 07:00:47', 0, 9999),
-('2017-05-04 08:03:33', 0, 9999),
-('2017-05-04 22:19:10', 0, 9999),
-('2017-05-08 06:26:52', 0, 9999),
-('2017-05-08 07:08:58', 0, 9999),
-('2017-05-08 20:04:44', 0, 9999),
-('2017-05-09 09:10:16', 0, 9999),
-('2017-05-09 21:00:04', 0, 9999),
-('2017-05-09 21:00:46', 0, 9999),
-('2017-05-09 21:01:57', 0, 9999),
-('2017-05-09 21:01:59', 0, 9999),
-('2017-05-09 21:02:00', 0, 9999),
-('2017-05-09 21:02:30', 0, 9999),
-('2017-05-09 21:03:02', 0, 9999),
-('2017-05-09 21:09:29', 0, 9999),
-('2017-05-09 21:09:45', 1, 1001),
-('2017-05-09 21:09:56', 1, 1001),
-('2017-05-09 21:10:16', 1, 1001),
-('2017-05-09 21:10:27', 1, 1001),
-('2017-05-09 21:18:20', 1, 1001),
-('2017-05-09 21:26:01', 0, 9999),
-('2017-05-09 21:26:43', 0, 9999),
-('2017-05-09 21:26:44', 0, 9999),
-('2017-05-09 21:27:16', 0, 9999),
-('2017-05-09 23:08:24', 0, 9999),
-('2017-05-10 11:30:14', 0, 9999),
-('2017-05-10 11:45:35', 0, 9999),
-('2017-05-10 11:47:00', 0, 9999),
-('2017-05-10 11:47:33', 0, 9999),
-('2017-05-10 12:23:59', 0, 9999),
-('2017-05-10 13:06:21', 0, 9999),
-('2017-05-10 14:43:32', 0, 9999),
-('2017-05-10 15:18:00', 0, 9999),
-('2017-05-11 05:09:17', 0, 9999),
-('2017-05-11 05:21:41', 0, 9999),
-('2017-05-11 17:40:13', 0, 9999),
-('2017-05-14 08:58:49', 0, 9999),
-('2017-05-14 08:59:13', 1, 1001),
-('2017-05-15 09:36:10', 0, 9999),
-('2017-05-15 09:36:25', 1, 1001),
-('2017-05-15 10:16:21', 0, 9999),
-('2017-05-15 11:04:30', 0, 9999),
-('2017-05-15 12:44:43', 0, 9999),
-('2017-05-15 13:18:01', 0, 9999),
-('2017-05-15 15:07:17', 0, 9999),
-('2017-05-15 15:40:59', 0, 9999),
-('2017-05-15 21:58:02', 0, 9999),
-('2017-05-16 03:42:39', 0, 9999),
-('2017-05-22 02:34:51', 0, 9999),
-('2017-05-22 09:35:39', 0, 9999),
-('2017-05-22 10:35:13', 0, 9999),
-('2017-05-22 10:48:01', 0, 9999),
-('2017-05-22 11:53:10', 0, 9999),
-('2017-05-22 12:12:16', 0, 9999),
-('2017-05-22 12:26:28', 0, 9999),
-('2017-05-22 12:42:23', 0, 9999),
-('2017-05-22 13:13:03', 0, 9999),
-('2017-05-22 13:16:39', 0, 9999),
-('2017-05-23 01:39:41', 0, 9999);
 
 -- --------------------------------------------------------
 
@@ -108,7 +38,7 @@ INSERT INTO `accesses` (`accessDate`, `userCode`, `parishcode`) VALUES
 -- Table structure for table `bapts`
 --
 
-CREATE TABLE IF NOT EXISTS `bapts` (
+CREATE TABLE `bapts` (
   `firstName` text NOT NULL,
   `middleName` text NOT NULL,
   `lastName` text NOT NULL,
@@ -137,30 +67,13 @@ CREATE TABLE IF NOT EXISTS `bapts` (
   `baptYear` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `bapts`
---
-
-INSERT INTO `bapts` (`firstName`, `middleName`, `lastName`, `suffix`, `mother`, `father`, `bDay`, `bMonth`, `bYear`, `bPlace`, `bParishCode`, `lastModified`, `registered`, `baptCode`, `bPriestName`, `bSpA`, `bSpB`, `printingDateTime`, `printingDetails`, `printingStaffCode`, `bBookNum`, `bPageNum`, `bLineNum`, `baptDay`, `baptMonth`, `baptYear`) VALUES
-('Jera', 's', 'Angga', 's', 's', 's', 1, 'September', 1900, 's', 2001, '2017-05-15 21:58:20', '2017-05-01 02:17:26', 4, 's', 's', 's', '2017-05-15 21:58:20', 1, 0, 1, 1, 1, 1, 'January', 1900),
-('Jerome', 'Francisco', 'Angala Joestar', '', 'Ime Anga', 'Rom Ang', 6, 'December', 1997, 'Pasay City', 3004, '2017-05-15 13:46:03', '2017-05-03 19:06:58', 5, 'Larru=y', 'Windows', 'Apple', '2017-05-15 13:46:03', 1, 0, 1, 2, 3, 1, 'January', 1900),
-('Firstname', 'Middlename', 'Lastname', 'Suffix', 'She Is Your Mother', 'I Am Your Father', 1, 'January', 1900, 'Birthplace', 2001, '2017-05-15 11:12:16', '2017-05-04 22:23:10', 6, 'Father Priest', 'Sponsor2', 'Sponsor1', '2017-05-15 11:12:16', 1, 0, 7, 3, 4, 1, 'January', 1900),
-('s', 's', 's', 's', 's', 's', 1, 'January', 1900, 's', 2001, '2017-05-15 13:45:47', '2015-05-08 09:23:34', 7, 's', 's', 's', '2017-05-15 13:45:47', 1, 0, 1, 1, 1, 1, 'January', 1900),
-('Jerome', 'Francisco', 'Angala', 'IV', 'Ime Ime', 'Rome Rome', 1, 'November', 1997, 'Morioh Cho', 2001, '2017-05-15 13:44:17', '2017-05-10 14:46:14', 8, 'Father Kirei Crackers', 'Mc Jollibee', 'Andoks Lechon', '2017-05-15 13:44:17', 1, 0, 2, 33, 33, 11, 'July', 2010),
-('f', 'f', 'f', 'f', 'f', 'f', 1, 'January', 1900, 'f', 1001, '2017-05-15 13:45:21', '2017-05-14 09:03:37', 9, 'f', 'f', 'f', '2017-05-15 13:45:21', 1, 0, 1, 1, 1, 1, 'January', 1900),
-('vtvbrsszcd', 'htrhtr', 'gtrgtr', 'rr', 'efrere', 'rere', 1, 'January', 1900, 'fercgre htr nr', 4005, '2017-05-15 14:39:44', '2017-05-15 14:39:44', 10, 'hrvhtr', 'gtgt54', 't54t54', '0000-00-00 00:00:00', 0, 0, 2, 21, 43, 5, 'August', 1911),
-('fvgdnxvvfds', 'fvfd', 'svdsvdsfv', 'rch', 'crsec', 'hcdseh', 4, 'May', 1904, 'deagha', 5004, '2017-05-15 14:40:13', '2017-05-15 14:40:13', 11, 'gfeasgdes', 'gadesgae', 'gfaegfae', '0000-00-00 00:00:00', 0, 0, 1, 12, 2, 7, 'May', 1927),
-('dr43dr43', 'r43dr4', '43', 'd43', 'yt4rgt', 'd43', 1, 'October', 1900, '54gvtr', 2001, '2017-05-15 14:48:57', '2017-05-15 14:48:57', 12, 'g5t4wg', '5wdg53w', '4t54', '0000-00-00 00:00:00', 0, 0, 1, 1, 22, 1, 'January', 1900),
-('32132', '21321', '321312', 'bdjb', 'vcxdvcxd', 'dxgxcd', 1, 'January', 1900, 'vfxsvx', 2001, '2017-05-15 14:49:27', '2017-05-15 14:49:27', 13, 'hvrsh', 'vrshvrs', 'hvrsrv', '0000-00-00 00:00:00', 0, 0, 3, 3, 33, 1, 'January', 1900),
-('ytry', 'trytr', 'yrty', 'ryrtyr', 'ytr', 'ytr', 1, 'October', 1900, 'ytr', 1006, '2017-05-15 15:50:33', '2017-05-15 14:50:04', 14, 'ytr', 'ytr', 'ytr', '2017-05-15 15:50:33', 1, 0, 2, 2, 2, 1, 'January', 1900);
-
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `confs`
 --
 
-CREATE TABLE IF NOT EXISTS `confs` (
+CREATE TABLE `confs` (
   `firstName` text NOT NULL,
   `middleName` text NOT NULL,
   `lastName` text NOT NULL,
@@ -193,30 +106,13 @@ CREATE TABLE IF NOT EXISTS `confs` (
   `baptParishCode` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `confs`
---
-
-INSERT INTO `confs` (`firstName`, `middleName`, `lastName`, `suffix`, `mother`, `father`, `bDay`, `bMonth`, `bYear`, `cParishCode`, `lastModified`, `registered`, `confCode`, `cBishopName`, `cSpA`, `cSpB`, `printingDateTime`, `printingDetails`, `printingStaffCode`, `cBookNum`, `cPageNum`, `cLineNum`, `confDay`, `confMonth`, `confYear`, `confAdmin`, `baptDay`, `baptMonth`, `baptYear`, `baptParishCode`) VALUES
-('s', 's', 's', 's', 's', 's', 1, 'January', 1900, 2001, '2017-05-15 15:42:51', '2017-05-04 02:20:55', 1, 's', 's', 's', '2017-05-15 15:42:51', 1, 0, 1, 1, 1, 1, 'January', 1900, 's', 1, 'January', 1900, 2001),
-('Josuke', 'None', 'Higashikata', '', 'bla', 'Joseph Joestar', 1, 'January', 1900, 2001, '2017-05-04 13:01:21', '2017-05-04 07:01:21', 2, 's', 's', 'ss1', '0000-00-00 00:00:00', 0, 0, 1, 1, 1, 1, 'January', 1900, 's', 1, 'January', 1900, 2001),
-('vdsvfdsfre', 'vdsvfdsfre', 'vdsvfdsfre', 'vdsvfdsfre', 'vdsvfdsfre', 'vdsvfdsfre', 1, 'January', 1900, 3002, '2017-05-15 14:56:58', '2017-05-15 14:56:58', 3, 'vdsvfdsfre', 'vdsvfdsfre', 'vdsvfdsfre', '0000-00-00 00:00:00', 0, 0, 2, 2, 2, 1, 'January', 1900, 'vdsvfdsfre', 1, 'January', 1900, 4005),
-('vdsvfdsfrevdsvfdsfre', 'vdsvfdsfrevdsvfdsfre', 'vdsvfdsfre', 'vdsvfdsfrevdsvfdsfre', 'vdsvfdsfre', 'vdsvfdsfrevdsvfdsfrevdsvfdsfre', 1, 'July', 1900, 2001, '2017-05-15 14:57:21', '2017-05-15 14:57:21', 4, 'vdsvfdsfre', 'freggr', 'egre', '0000-00-00 00:00:00', 0, 0, 2, 2, 22, 8, 'September', 1900, 'fe', 1, 'August', 1900, 4008),
-('feswfes', 'fes', 'fes', 'fes', 'fes', 'fes', 1, 'November', 1900, 3002, '2017-05-15 14:57:48', '2017-05-15 14:57:48', 5, 'ew', 'ew', 'we', '0000-00-00 00:00:00', 0, 0, 34, 34, 99, 25, 'December', 1914, 'w', 1, 'January', 1900, 2007),
-('r', 'r', 'r', 'ryrtyr', 'r', 'rere', 6, 'January', 1900, 2007, '2017-05-15 14:58:16', '2017-05-15 14:58:16', 6, 'gtg', 'tg', 'tgt', '0000-00-00 00:00:00', 0, 0, 4, 4, 4, 1, 'June', 1900, 'gt', 19, 'September', 1900, 5001),
-('fr', 'fr', 'fr', 'frfr', 'frd', 'dfrd', 15, 'November', 1900, 1006, '2017-05-15 14:58:40', '2017-05-15 14:58:40', 7, 'r', 'trevgrev', 'gregre', '0000-00-00 00:00:00', 0, 0, 55, 56, 57, 1, 'August', 1900, 'fev', 1, 'September', 1900, 1002),
-('rer', 'ere', 'rere', 'rew', 'rew', 'rewrew', 6, 'January', 1900, 4001, '2017-05-15 14:59:05', '2017-05-15 14:59:05', 8, 'g5yey', 'try', 'ytr', '0000-00-00 00:00:00', 0, 0, 99, 99, 99, 1, 'January', 1900, 'r5yt', 1, 'April', 1900, 1006),
-('3424', '324', '3242', '432', '432', '432', 1, 'January', 1900, 2003, '2017-05-15 14:59:35', '2017-05-15 14:59:35', 9, '432', '432', '43', '0000-00-00 00:00:00', 0, 0, 66, 66, 66, 1, 'October', 1900, '432', 1, 'January', 1900, 3003),
-('65', '65765', '765', '765', '57657', '576', 1, 'January', 1900, 2007, '2017-05-15 15:00:36', '2017-05-15 15:00:36', 10, '765', '765', '76575', '0000-00-00 00:00:00', 0, 0, 23, 23, 23, 1, 'January', 1900, '7657', 1, 'January', 1900, 6008),
-('htng', 'jhgjg', 'jhg', 'jhg', 'hg', 'hgj', 1, 'January', 1900, 4007, '2017-05-15 15:01:16', '2017-05-15 15:01:16', 11, 'jhg', 'jhg', 'jhg', '0000-00-00 00:00:00', 0, 0, 1, 1, 1, 1, 'January', 1900, 'jhg', 1, 'January', 1900, 3005);
-
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `parishes`
 --
 
-CREATE TABLE IF NOT EXISTS `parishes` (
+CREATE TABLE `parishes` (
   `parishCode` int(11) NOT NULL,
   `parishName` text NOT NULL,
   `parishPriestName` text NOT NULL,
@@ -283,7 +179,7 @@ INSERT INTO `parishes` (`parishCode`, `parishName`, `parishPriestName`, `vicaria
 -- Table structure for table `users`
 --
 
-CREATE TABLE IF NOT EXISTS `users` (
+CREATE TABLE `users` (
   `userCode` int(11) NOT NULL,
   `userName` text NOT NULL,
   `password` text NOT NULL,
@@ -295,8 +191,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`userCode`, `userName`, `password`, `parishCode`) VALUES
-(0, 'CubaoAdmin', '9dc778ecf844759ae64b5c39ffe15c1a', 9999),
-(1, 'hfprd', '5f4dcc3b5aa765d61d8327deb882cf99', 1001);
+(0, 'CubaoAdmin', '9dc778ecf844759ae64b5c39ffe15c1a', 9999);
 
 -- --------------------------------------------------------
 
@@ -304,7 +199,7 @@ INSERT INTO `users` (`userCode`, `userName`, `password`, `parishCode`) VALUES
 -- Table structure for table `vicariates`
 --
 
-CREATE TABLE IF NOT EXISTS `vicariates` (
+CREATE TABLE `vicariates` (
   `vicariateCode` binary(10) NOT NULL,
   `vicariateName` binary(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
